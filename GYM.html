@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        nav {
+            display: flex;
+            padding: 0px;
+            background-color: rgb(236 210 59);
+        }
+
+        .items {
+            list-style: none;
+            padding: 5px 20px;
+        }
+
+        .items a {
+            padding: 20px;
+            display: block;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 25px;
+            font-weight: bold;
+        
+        }
+
+        .container {
+            width: 100%;
+            margin: 6px auto;
+            background-color: rgb(170, 228, 248);
+            border-radius: 12px;
+        }
+
+        body {
+            background: url("bg.jpg");
+        }
+
+        .items a:hover {
+            color: black;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 5px;
+            padding: 23px;
+            text-decoration: underline;
+        }
+
+        h2 {
+            padding: 8px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 25px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .content-left {
+            float: left;
+            width: 70%; 
+            padding: 20px;
+            margin: 0 20px;
+        }
+
+        .login-container {
+            position: absolute;
+            top: 120px; 
+            right: 20px; 
+            width: 32%; 
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 8px;
+        }
+
+        .login-container h2 {
+            font-family: Arial,  sans-serif;
+        }
+
+        .login-container label {
+            display: block;
+            margin-top: 10px;
+            
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 95%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .login-container button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #45a049;
+        }
+        body {
+    background-image: url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+li{
+    padding: 5px;
+    font-weight: bold;
+    font-size: 25px;
+    font-style: italic;
+}
+.box{
+    border: 2px solid rgb(0, 0, 0);
+    width: 800PX;
+    margin: -25px -40px;
+    background-color:rgb(215, 191, 57);
+    height: 100%;
+}
+.btn{
+background-color: #000000;
+color: white;
+}
+    </style>
+</head>
+
+<body>
+    <nav>
+        <li class="items"><a href="#">Home</a></li>
+        <li class="items"><a href="#">About US</a></li>
+        <li class="items"><a href="#">Get Started</a></li>
+        <li class="items"><a href="#">Programs</a></li>
+        <li class="items"><a href="#">View Schedule</a></li>
+        <li class="items"><a href="#">Membership Plan</a></li>
+        <li class="items"><a href="#">Student and Senior Discount</a></li>
+        <li class="items"><a href="#">Annual Membership</a></li>
+    </nav>
+    <div class="container">
+        <div class="content-left">
+            <div class="box">
+                <h2>About Our Gym</h2>
+                <p>we're here to help you succeed.</p>
+                <h2>Classes</h2>
+                <p>Choose from a variety of classes tailored to your needs, including:</p>
+                
+                    <li>Cardio Workouts</li>
+                    <li>Strength Training</li>
+                    <li>Yoga and Pilates</li>
+                    <li>High-Intensity Interval Training (HIIT)</li>
+                
+                <p>View our class schedule and find the perfect class for you.</p>
+                <button class="btn">View Schedule</button>
+            
+                    <li>Monthly Memberships</li>
+                    <li>Annual Memberships</li>
+                    <li>Student and Senior Discounts</li>
+                
+                <p>Find the perfect plan for you and start your fitness journey today.</p> 
+                <button class="btn">View Pricing</button>
+            </div>
+        </div>
+        <div class="login-container">
+            <div class="login-box">
+                <h2>LOGIN</h2>
+                <form>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
